@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   background-color: #fdfdfd;
@@ -36,11 +35,21 @@ nav a:hover {
   gap: 20px;
 }
 
-.gallery iframe {
+.card-wrapper {
   width: 165px;
   height: 248px;
-  border: none;
+  overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  pointer-events: none;  /* 禁止互動：無法縮放或點擊工具列 */
+  position: relative;
+}
+
+.card-wrapper iframe {
+  position: absolute;
+  top: -30px;       /* 微調內部預覽上下位置 */
+  left: 0;
+  width: 100%;
+  height: 310px;    /* 裁切工具列與黑邊，保持比例 */
+  border: none;
+  pointer-events: none;
 }
