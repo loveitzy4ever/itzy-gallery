@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background-color: #fdfdfd;
@@ -11,6 +12,23 @@ h1 {
   margin-bottom: 30px;
 }
 
+nav {
+  background-color: #eee;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -18,9 +36,9 @@ h1 {
   gap: 20px;
 }
 
-.photo-frame iframe {
-  width: 165px;      /* 小卡寬度 */
-  height: 248px;     /* 小卡高度 */
+.gallery iframe {
+  width: 165px;
+  height: 248px;
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
