@@ -18,15 +18,10 @@ h1 {
   gap: 20px;
 }
 
-.photo-card img {
-  width: 165px;       /* 約 55mm，2:3 比例 */
-  height: 248px;      /* 約 85mm */
-  object-fit: cover;
+.photo-frame iframe {
+  width: 165px;      /* 小卡寬度 */
+  height: 248px;     /* 小卡高度 */
+  border: none;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-}
-
-.photo-card img:hover {
-  transform: scale(1.05);
 }
