@@ -35,33 +35,33 @@ nav a:hover {
   gap: 20px;
 }
 
+/* 橫式小卡（預設） */
 .card-wrapper {
-  width: 165px;
-  height: 248px;
+  width: 248px;
+  height: 165px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 
-/* 橫式（預設） */
-.card-wrapper:not(.vertical) iframe {
+.card-wrapper iframe {
   position: absolute;
-  top: -10px;
+  top: -20px;        /* 微調顯示位置 */
   left: 0;
   width: 100%;
-  height: 280px;
+  height: 220px;     /* 裁切高度 */
   border: none;
   pointer-events: none;
 }
 
-/* 直式裁切版本 */
+/* 垂直小卡樣式（套用 vertical 類別） */
+.card-wrapper.vertical {
+  width: 165px;
+  height: 248px;
+}
+
 .card-wrapper.vertical iframe {
-  position: absolute;
   top: -60px;
-  left: 0;
-  width: 100%;
   height: 340px;
-  border: none;
-  pointer-events: none;
 }
