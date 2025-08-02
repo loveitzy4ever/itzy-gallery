@@ -43,19 +43,25 @@ nav a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 .card-wrapper iframe {
   position: absolute;
-  top: -60px;        /* 微調顯示位置 */
+  top: -60px;
   left: 0;
   width: 100%;
-  height: 340px;     /* 裁切高度 */
+  height: 340px;
   border: none;
   pointer-events: none;
 }
 
-/* 橫式小卡樣式（套用 horizontal 類別） */
+/* 橫式小卡樣式 */
 .card-wrapper.horizontal {
   width: 248px;
   height: 165px;
@@ -65,4 +71,3 @@ nav a:hover {
   top: -20px;
   height: 220px;
 }
-
